@@ -1,0 +1,9 @@
+Cambios realizados en procedure:
+
+[reghis].[pa_ciclo_carga_tablas_ts_th]
+
+agregado de With a sugerencia Nolock 
+
+Nahuel, ahí me fijé el error en Normalización de datos
+Se ingresan en 20 columnas de [ltbl_bitacora_proceso], datos en 19 con el INSERT del procedure [pa_ciclo_carga_tablas_ts_th]
+Falta agregar correlativo, que es "CorrelativoProductoTraspasado". Este sale de [reghis].[STS_MOVIMIENTO_BODY] y es unico para cada folio.
